@@ -12,7 +12,8 @@ public class Singleton {
     public static void main(String[] args) {
         
         
-        singleStone sin = singleStone.getSingleton(); 
+        singleStone sin = singleStone.getSingleton();
+        singleStone sin1 = singleStone.getSingleton(); 
         Scanner sc= new Scanner(System.in);
         
         System.out.println("ingrese nombre del creador del singleton");
@@ -20,6 +21,7 @@ public class Singleton {
         
         singleStone.setNombre(nombre);
         System.out.println(sin.getNombre());
+        System.out.println(sin1.getNombre());
     }
     
 }
